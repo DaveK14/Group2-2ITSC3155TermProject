@@ -13,4 +13,7 @@ class WorkoutController < ApplicationController
             render 'new'
         end
     end
+    def show
+        @workout = Workout.find(params[:id])
+    end
 end
