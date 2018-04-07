@@ -17,3 +17,7 @@ class WorkoutsController < ApplicationController
         @workout = Workout.find(params[:id])
     end
 end
+private
+    def workout_params
+        params.require(:workout).permit(:name, :group)
+    end
