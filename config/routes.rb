@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   get 'welcome/index'
   
-  resources :workout
+  resources :workouts
   
   root 'welcome#index'
 end
