@@ -7,16 +7,16 @@
   <strong>Group:</strong>
   <%= @workout.group %>
 </p>
-<h2>Excercises</h2>
+<h2>Exercises</h2>
 <% @workout.excercises.each do |setrep| %>
     <p>
-        <strong>Excercise Name:</strong>
+        <strong>Exercise Name:</strong>
         <%= excercise.setrep %>
     </p>
     
     
     <p>
-        <strong>Excercise Info:</strong>
+        <strong>Exercise Info:</strong>
         <%= setrep.box11 %>
         <%= setrep.box12 %>
         <%= setrep.box13 %>
@@ -28,49 +28,39 @@
         <%= setrep.box33 %>
     </p>
 <% end %>
-<h2>Add an excercise:</h2>
+<h2>Add an exercise:</h2>
 <%= form_for([@workout, @workout.excercises.build]) do |f| %>
   <p>
     <%= f.label :setrep %><br>
     <%= f.text_field :setrep %>
   </p>
   <p>
-    <%= f.label :box11 %><br>
     <%= f.text_area :box11 %>
   </p>
     <p>
-    <%= f.label :box12 %><br>
     <%= f.text_area :box12 %>
   </p>
     <p>
-    <%= f.label :box13 %><br>
     <%= f.text_area :box13 %>
   </p>
     <p>
-    <%= f.label :box21 %><br>
     <%= f.text_area :box21 %>
   </p>
     <p>
-    <%= f.label :box22 %><br>
     <%= f.text_area :box22 %>
   </p>
     <p>
-    <%= f.label :box23 %><br>
     <%= f.text_area :box23 %>
   </p>
     <p>
-    <%= f.label :box31 %><br>
     <%= f.text_area :box31 %>
   </p>
     <p>
-    <%= f.label :box32 %><br>
     <%= f.text_area :box32 %>
   </p>
     <p>
-    <%= f.label :box33 %><br>
     <%= f.text_area :box33 %>
   </p>
-  <p>
   <p>
     <%= f.submit %>
   </p>
