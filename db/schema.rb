@@ -10,7 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180402170746) do
+ActiveRecord::Schema.define(version: 20180411165425) do
+
+  create_table "excercises", force: :cascade do |t|
+    t.string "setrep"
+    t.text "box11"
+    t.text "box12"
+    t.text "box13"
+    t.text "box21"
+    t.text "box22"
+    t.text "box23"
+    t.text "box31"
+    t.text "box32"
+    t.text "box33"
+    t.integer "workout_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["workout_id"], name: "index_excercises_on_workout_id"
+  end
 
   create_table "workouts", force: :cascade do |t|
     t.string "name"
