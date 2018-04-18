@@ -5,7 +5,7 @@ Feature: Add excercises to a workout
   I want to be given the option to add an excercise as soon as I create a workout
 
 Scenario: As a User I want to navigate to the create excercise page from the create workout page when I create a workout
-  Given I am on the "New Workout" page
+  Given I am on the new workout page
   When I click on the "Create Workout" button
   Then I should be on the "Displaying Workout" page
   And I should see the "box11" field
