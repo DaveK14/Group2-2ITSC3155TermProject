@@ -11,30 +11,29 @@
   <%= @workout.group %>
 </p>
 <h2>Exercises</h2>
-<% @workout.excercises.each do |setrep| %>
+<% @workout.excercises.each do |excercise| %>
     <p>
         <strong>Exercise Name:</strong>
-        <%= excercise.text %>
+        <%= excercise.setrep %>
     </p>
     
     
     <p>
         <strong>Exercise Info:</strong>
-        <%= setrep.box11 %>
-        <%= setrep.box12 %>
-        <%= setrep.box13 %>
-        <%= setrep.box21 %>
-        <%= setrep.box22 %>
-        <%= setrep.box23 %>
-        <%= setrep.box31 %>
-        <%= setrep.box32 %>
-        <%= setrep.box33 %>
+        <%= excercise.box11 %>
+        <%= excercise.box12 %>
+        <%= excercise.box13 %>
+        <%= excercise.box21 %>
+        <%= excercise.box22 %>
+        <%= excercise.box23 %>
+        <%= excercise.box31 %>
+        <%= excercise.box32 %>
+        <%= excercise.box33 %>
     </p>
 <% end %>
 <h2>Add an exercise:</h2>
 <%= form_for([@workout, @workout.excercises.build]) do |f| %>
   <p>
-    <%= f.label :setrep %><br>
     <%= f.text_field :setrep %>
   </p>
   <p>

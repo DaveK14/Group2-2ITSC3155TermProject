@@ -6,8 +6,6 @@ When("I click on the {string} link") do |page_name|
   click_link page_name
 end
 
-When("I click on the {string} button")
-
 Then("I should be on the {string} page") do |page_name|
 end
 
