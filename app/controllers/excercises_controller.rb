@@ -2,7 +2,7 @@ class ExcercisesController < ApplicationController
     def create
         @workout = Workout.find(params[:workout_id])
         @excercise = @workout.excercises.create(excercise_params)
-        redirect_to workouts_path(@workout)
+        redirect_to workout_path(@workout)
     end
     
     def show
