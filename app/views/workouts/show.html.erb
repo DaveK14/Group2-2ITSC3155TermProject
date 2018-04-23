@@ -26,51 +26,41 @@
         <%= excercise.box21 %>
         <%= excercise.box22 %>
         <%= excercise.box23 %>
-        <%= excercise.box31 %>
-        <%= excercise.box32 %>
-        <%= excercise.box33 %>
     </p>
 <% end %>
 <h2>Add an exercise:</h2>
 <%= form_for([@workout, @workout.excercises.build]) do |f| %>
   <p>
+    <%= f.label :Name %>
     <%= f.text_field :setrep %>
   </p>
   <p>
-    <%= f.label :box11 %><br>
+    <%= f.label :set_1 %>
+  </p>
+  <p>
     <%= f.text_area :box11 %>
   </p>
   <p>
-    <%= f.label :box12 %><br>
-    <%= f.text_area :box12 %>
-  </p>
-  <p>
-    <%= f.label :box13 %><br>
-    <%= f.text_area :box13 %>
-  </p>
-  <p>
-    <%= f.label :box21 %><br>
     <%= f.text_area :box21 %>
   </p>
   <p>
-    <%= f.label :box22 %><br>
+    <%= f.label :set_2 %>
+  </p>
+  <p>
+    <%= f.text_area :box12 %>
+  </p>
+  <p>
     <%= f.text_area :box22 %>
+  </p>  
+  <p>
+    <%= f.label :set_3 %>
   </p>
   <p>
-    <%= f.label :box23 %><br>
+    <%= f.text_area :box13 %>
+  </p>
+
+  <p>
     <%= f.text_area :box23 %>
-  </p>
-   <p>
-    <%= f.label :box31 %><br>
-    <%= f.text_area :box31 %>
-  </p>
-  <p>
-    <%= f.label :box32 %><br>
-    <%= f.text_area :box32 %>
-  </p>
-  <p>
-    <%= f.label :box33 %><br>
-    <%= f.text_area :box33 %>
   </p>
   <p>
     <%= f.submit %>
