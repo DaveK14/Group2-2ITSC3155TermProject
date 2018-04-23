@@ -20,9 +20,6 @@ ActiveRecord::Schema.define(version: 20180411165425) do
     t.text "box21"
     t.text "box22"
     t.text "box23"
-    t.text "box31"
-    t.text "box32"
-    t.text "box33"
     t.integer "workout_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
