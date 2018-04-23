@@ -10,61 +10,104 @@
   <strong>Group:</strong>
   <%= @workout.group %>
 </p>
+
 <h2>Exercises</h2>
 <% @workout.excercises.each do |excercise| %>
     <p>
         <strong>Exercise Name:</strong>
         <%= excercise.setrep %>
     </p>
-    
+ 
     
     <p>
         <strong>Exercise Info:</strong>
+        <br> Weight: 
         <%= excercise.box11 %>
+        &nbsp;&nbsp;Reps: 
         <%= excercise.box12 %>
+        <br> Weight: 
         <%= excercise.box13 %>
+        &nbsp;&nbsp;Reps: 
         <%= excercise.box21 %>
+        <br> Weight: 
         <%= excercise.box22 %>
+        &nbsp;&nbsp;Reps: 
         <%= excercise.box23 %>
     </p>
 <% end %>
 <h2>Add an exercise:</h2>
 <%= form_for([@workout, @workout.excercises.build]) do |f| %>
-  <p>
-    <%= f.label :Name %>
-    <%= f.text_field :setrep %>
-  </p>
-  <p>
-    <%= f.label :set_1 %>
-  </p>
-  <p>
-    <%= f.text_area :box11 %>
-  </p>
-  <p>
-    <%= f.text_area :box21 %>
-  </p>
-  <p>
-    <%= f.label :set_2 %>
-  </p>
-  <p>
-    <%= f.text_area :box12 %>
-  </p>
-  <p>
-    <%= f.text_area :box22 %>
-  </p>  
-  <p>
-    <%= f.label :set_3 %>
-  </p>
-  <p>
-    <%= f.text_area :box13 %>
-  </p>
+<!--  <p>-->
+<!--    <%= f.label :Name %>-->
+<!--    <%= f.text_field :setrep %>-->
+<!--  </p>-->
+<!--  <p>-->
+<!--    <%= f.label :set_1 %>-->
+<!--  </p>-->
+<!--  <p>-->
+<!--    <%= f.text_area :box11 %>-->
+<!--  </p>-->
+<!--  <p>-->
+<!--    <%= f.text_area :box21 %>-->
+<!--  </p>-->
+<!--  <p>-->
+<!--    <%= f.label :set_2 %>-->
+<!--  </p>-->
+<!--  <p>-->
+<!--    <%= f.text_area :box12 %>-->
+<!--  </p>-->
+<!--  <p>-->
+<!--    <%= f.text_area :box22 %>-->
+<!--  </p>  -->
+<!--  <p>-->
+<!--    <%= f.label :set_3 %>-->
+<!--  </p>-->
+<!--  <p>-->
+<!--    <%= f.text_area :box13 %>-->
+<!--  </p>-->
 
-  <p>
-    <%= f.text_area :box23 %>
-  </p>
+<!--  <p>-->
+<!--    <%= f.text_area :box23 %>-->
+<!--  </p>-->
+<!--  <p>-->
+<!--    <%= f.submit %>-->
+<!--  </p>-->
+
+<h2>Workouts</h2>
+
+<table style="width:100%">
+  <tr>
+    <th></th>
+    <th>Weight</th> 
+    <th>Reps</th>
+  </tr>
+  <tr>
+    <td>Set 1</td>
+    <td><%= f.text_area :box11 %></td>
+    <td><%= f.text_area :box21 %></td>
+  </tr>
+  <tr>
+    <td>Set 2</td>
+    <td><%= f.text_area :box12 %></td>
+    <td><%= f.text_area :box22 %></td>
+  </tr>
+  <tr>
+    <td>Set 3</td>
+    <td><%= f.text_area :box13 %></td>
+    <td><%= f.text_area :box23 %></td>
+  </tr>
+</table>
+
   <p>
     <%= f.submit %>
   </p>
+
+
 <% end %>
 
 <%= link_to 'Workout List', workouts_path %>
+
+<!DOCTYPE html>
+<html>
+<body>
+
