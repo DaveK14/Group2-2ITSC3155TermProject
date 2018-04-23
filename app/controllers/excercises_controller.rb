@@ -8,6 +8,10 @@ class ExcercisesController < ApplicationController
     def show
         @excercise = Excercise.find(params[:id])
     end
+    def edit
+        @workout = Workout.find(params[:id])
+        @excercise = Excercise.find(params[:id])
+    end
     def update
         @excercise = Excercise.find(params[:id])
         

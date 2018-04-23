@@ -1,0 +1,39 @@
+<%= form_for([@workout, @workout.excercises.build]) do |f| %>
+  <p>
+    <%= f.label :Name %>
+    <%= f.text_field :setrep %>
+  </p>
+   <%= f.label :Weight %><br>
+   <%= f.label :Reps %><br>
+  <p>
+    <%= f.label :Set_1 %>
+  </p>
+  <p>
+    <%= f.text_area :box11 %>
+  </p>
+  <p>
+    <%= f.text_area :box21 %>
+  </p>
+  <p>
+    <%= f.label :Set_2 %>
+  </p>
+  <p>
+    <%= f.text_area :box12 %>
+  </p>
+  <p>
+    <%= f.text_area :box22 %>
+  </p>  
+  <p>
+    <%= f.label :Set_3 %>
+  </p>
+  <p>
+    <%= f.text_area :box13 %>
+  </p>
+
+  <p>
+    <%= f.text_area :box23 %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
