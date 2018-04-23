@@ -13,9 +13,15 @@
       <td><%= link_to 'Show', workout_path(workout) %></td>
       <td><%= link_to 'Edit', edit_workout_path(workout) %></td>    
       <td><%= link_to 'Destroy',
+<<<<<<< HEAD
                                 workouts_path(workout),
                                 method: :delete,
                                 data: { confirm: 'Are you sure?' } %></td>
+=======
+          workout_path(workout),
+          method: :delete,
+          data: { confirm: 'Are you sure?' } %></td>
+>>>>>>> 15dade77c2094b779e2d168681faa103315138c0
     </tr>
   <% end %>
 </table>
