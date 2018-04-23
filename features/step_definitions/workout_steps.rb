@@ -30,5 +30,5 @@ Then("I should be on the {string} page") do |page_name|
 end
 
 Then("I should see the {string} field") do |field_name|
-  expect(page).to have_field(field_name)
+  expect(page).to have_content(field_name)
 end
