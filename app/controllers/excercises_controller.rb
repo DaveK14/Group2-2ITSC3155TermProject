@@ -11,6 +11,6 @@ class ExcercisesController < ApplicationController
     
     private
         def excercise_params
-            params.require(:excercise).permit(:box11, :box12, :box13, :box21, :box22, :box23)
+            params.require(:excercise).permit(:setrep, :box11, :box12, :box13, :box21, :box22, :box23)
         end
 end
