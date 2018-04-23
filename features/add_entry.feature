@@ -8,12 +8,12 @@ Scenario: As a User I want to navigate to the create excercise page from the cre
   Given I am on the new workout page
   When I click on the "Create Workout" button
   Then I should be on the "Displaying Workout" page
-  And I should see the "box11" field
-  And I should see the "box12" field
-  And I should see the "box13" field
-  And I should see the "box21" field
-  And I should see the "box22" field
-  And I should see the "box23" field
-  And I should see the "box31" field
-  And I should see the "box32" field
-  And I should see the "box33" field
+  And I should see the "Box11" field
+  And I should see the "Box12" field
+  And I should see the "Box13" field
+  And I should see the "Box21" field
+  And I should see the "Box22" field
+  And I should see the "Box23" field
+  And I should see the "Box31" field
+  And I should see the "Box32" field
+  And I should see the "Box33" field
