@@ -3,11 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
 	font-family: roboto;
-	background: linear-gradient(to bottom left, rgba(106,255,225,1.00) 10%, rgba(72,239,165,0.72) 50%);
 	//text-shadow: 1px 1px 1px white;
 	font-weight: 400;
-
-	
+    height: 2000px;
+    background: linear-gradient(to bottom right, CadetBlue, LightGreen);
 }
 
 h1 {
