@@ -12,7 +12,6 @@
 </p>
 
 <h2>Exercises</h2>
-<<<<<<< HEAD
 <% @workout.excercises.each do |excercise| %>
     <p>
         <strong>Exercise Name:</strong>
@@ -104,12 +103,6 @@
   </p>
 
 
-=======
- <%= render @workout.excercises %> 
-<h2>Add an exercise:</h2>
-<%= form_for([@workout, @workout.excercises.build]) do |f| %>
-  <%= render 'excercises/form' %>
->>>>>>> 4e5b6c3bbf879144576f9b031e6cdb56fb1d4b74
 <% end %>
 
 <%= link_to 'Workout List', workouts_path %>
