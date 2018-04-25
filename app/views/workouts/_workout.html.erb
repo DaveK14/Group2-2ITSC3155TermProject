@@ -1,0 +1,17 @@
+<p>
+    <strong>Exercise Name:</strong>
+    <%= excercise.setrep %>
+</p>
+    <strong>Exercise Info:</strong>
+    <%= excercise.box11 %>
+    <%= excercise.box12 %>
+    <%= excercise.box13 %>
+    <%= excercise.box21 %>
+    <%= excercise.box22 %>
+    <%= excercise.box23 %>
+
+<p>
+    <%= link_to 'Destroy Workout', [exercise.workout, exercise],
+                method: :delete,
+                data: { confirm: 'Are you sure?' } %>
+</p>
