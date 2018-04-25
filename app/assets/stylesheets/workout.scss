@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 body {
 	font-family: roboto;
+	//background: linear-gradient(to bottom left, rgba(106,255,225,1.00) 10%, rgba(72,239,165,0.72) 50%);
 	//text-shadow: 1px 1px 1px white;
 	font-weight: 400;
     height: 2000px;
@@ -152,3 +153,27 @@ a:hover {
     font-size: 1.5em;
 }
 
+#new_workout_button {
+    padding-top: 30px;
+    margin-left: 40%;
+    margin-right: 40%;
+    border: none;
+    font-family: roboto, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+    letter-spacing: 1.5px;
+    padding: 15px 15px;
+    cursor: pointer;
+    //text-decoration: none;
+    background-color: #28ffd8;
+    border-radius: 15px;
+    //align-self: center;
+    transition:.5s;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: #636071;
+}
+
+#new_workout_button:hover {
+    box-shadow: 0px 0px 15px 5px white;
+    background-color:#9bfffe;
+    //font-weight: 700;
+}
