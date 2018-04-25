@@ -1,38 +1,26 @@
 <%= form_for([@workout, @workout.excercises.build]) do |f| %>
-  <p>
-    <%= f.label :Name %>
-    <%= f.text_field :setrep %>
-  </p>
-   <%= f.label :Weight %><br>
-   <%= f.label :Reps %><br>
-  <p>
-    <%= f.label :Set_1 %>
-  </p>
-  <p>
-    <%= f.text_area :box11 %>
-  </p>
-  <p>
-    <%= f.text_area :box21 %>
-  </p>
-  <p>
-    <%= f.label :Set_2 %>
-  </p>
-  <p>
-    <%= f.text_area :box12 %>
-  </p>
-  <p>
-    <%= f.text_area :box22 %>
-  </p>  
-  <p>
-    <%= f.label :Set_3 %>
-  </p>
-  <p>
-    <%= f.text_area :box13 %>
-  </p>
-
-  <p>
-    <%= f.text_area :box23 %>
-  </p>
+<table style="width:100%">
+  <tr>
+    <th><%= f.text_field :setrep %></th>
+    <th>Weight</th> 
+    <th>Reps</th>
+  </tr>
+  <tr>
+    <td>Set 1</td>
+    <td><%= f.text_area :box11 %></td>
+    <td><%= f.text_area :box21 %></td>
+  </tr>
+  <tr>
+    <td>Set 2</td>
+    <td><%= f.text_area :box12 %></td>
+    <td><%= f.text_area :box22 %></td>
+  </tr>
+  <tr>
+    <td>Set 3</td>
+    <td><%= f.text_area :box13 %></td>
+    <td><%= f.text_area :box23 %></td>
+  </tr>
+</table>
   <p>
     <%= f.submit %>
   </p>
