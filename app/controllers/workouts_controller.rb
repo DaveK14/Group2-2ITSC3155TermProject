@@ -43,6 +43,7 @@ class WorkoutsController < ApplicationController
     
   
 end
+
 private
     def workout_params
         params.require(:workout).permit(:name, :group)
