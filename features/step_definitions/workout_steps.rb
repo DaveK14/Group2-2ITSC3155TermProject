@@ -32,3 +32,6 @@ end
 Then("I should see the {string} field") do |field_name|
   expect(page).to have_content(field_name)
 end
+And("{string} should be gone") do |field_name|
+  expect(page).to have_no_content(field_name)
+end

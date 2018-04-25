@@ -10,7 +10,7 @@ class ExcercisesController < ApplicationController
     end
     def edit
         @workout = Workout.find(params[:id])
-        @excercise = Excercise.find(params[:id])
+        @excercise = Excercise.find(params[:workout_id])
     end
     def update
         @excercise = Excercise.find(params[:id])
@@ -29,9 +29,8 @@ class ExcercisesController < ApplicationController
         
         redirect_to workout_path(@workout)
     end
-  
+end  
     private
         def excercise_params
             params.require(:excercise).permit(:setrep, :box11, :box12, :box13, :box21, :box22, :box23)
         end
-end
