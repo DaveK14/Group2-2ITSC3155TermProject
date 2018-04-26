@@ -12,7 +12,10 @@
 </p>
 
 <h2>Exercises</h2>
+<p>
  <%= render @workout.excercises %> 
+</p>
+
 <h2>Add an exercise:</h2>
 <%= form_for([@workout, @workout.excercises.build]) do |f| %>
   <%= render 'excercises/form' %>

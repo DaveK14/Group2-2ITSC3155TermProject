@@ -1,28 +1,33 @@
-    <p>
-        <strong>Exercise Name:</strong>
-        <%= excercise.setrep %>
+    <p id= "ExID">
+        <!--Exercise Name:-->
+        
+        <h3><%= excercise.setrep %></h3>
     </p>
  
     
-    <p>
-        <strong>Exercise Info:</strong>
-        <br> Weight: 
-        <%= excercise.box11 %>
+    <p id= "ExID">
+        <!--Exercise Info:-->
+        Weight: 
+        <strong><%= excercise.box11 %></strong>
         &nbsp;&nbsp;Reps: 
-        <%= excercise.box12 %>
+        <strong><%= excercise.box12 %></strong>
         <br> Weight: 
-        <%= excercise.box13 %>
+        <strong><%= excercise.box13 %></strong>
         &nbsp;&nbsp;Reps: 
-        <%= excercise.box21 %>
+        <strong><%= excercise.box21 %></strong>
         <br> Weight: 
-        <%= excercise.box22 %>
+        <strong><%= excercise.box22 %></strong>
         &nbsp;&nbsp;Reps: 
-        <%= excercise.box23 %>
-    </p>
-        <td><%= link_to 'Edit Exercise', edit_workout_excercise_path(excercise) %></td> 
+        <strong><%= excercise.box23 %></strong>
+    </p> 
         
-    <p>
+    <p id= "CRUD_small">
+        <td><%= link_to 'Edit Exercise', edit_workout_excercise_path(excercise) %></td> 
+        <br>
+          
+
         <%= link_to 'Destroy Exercise', [excercise.workout, excercise],
                 method: :delete,
                 data: { confirm: 'Are you sure?' } %>
+    <br><br>
     </p>
