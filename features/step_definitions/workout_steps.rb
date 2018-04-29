@@ -1,5 +1,7 @@
 Given("I am on the new workout page") do
   visit new_workout_path
+  fill_in 'Name', :with => 'Arm Day'
+  fill_in 'Group', :with => 'Biceps'
 end
 
 Given("I am on the create exercise page") do
@@ -31,4 +33,7 @@ end
 
 Then("I should see the {string} field") do |field_name|
   expect(page).to have_content(field_name)
+end
+And("{string} should be gone") do |field_name|
+  expect(page).to have_no_content(field_name)
 end
