@@ -1,5 +1,29 @@
 <h1>Editing Exercise</h1>
- 
-<%= render 'excercises/form' %>
- 
+ <%= form_for([@workout, @excercise]) do |f| %>
+<table>
+  <tr>
+    <th><%= f.text_field :setrep %></th>
+    <th>Weight</th> 
+    <th>Reps</th>
+  </tr>
+  <tr>
+    <td>Set 1</td>
+    <td><%= f.text_area :box11 %></td>
+    <td><%= f.text_area :box12 %></td>
+  </tr>
+  <tr>
+    <td>Set 2</td>
+    <td><%= f.text_area :box13 %></td>
+    <td><%= f.text_area :box21 %></td>
+  </tr>
+  <tr>
+    <td>Set 3</td>
+    <td><%= f.text_area :box22 %></td>
+    <td><%= f.text_area :box23 %></td>
+  </tr>
+</table>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
 <%= link_to 'Back', workouts_path %>

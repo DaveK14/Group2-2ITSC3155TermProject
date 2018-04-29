@@ -13,10 +13,11 @@ class ExcercisesController < ApplicationController
         @excercise = Excercise.find(params[:workout_id])
     end
     def update
+        @workout = Workout.find(params[:workout_id])
         @excercise = Excercise.find(params[:id])
         
         if @excercise.update(excercise_params)
-            redirect_to @excercise
+            redirect_to @workout
         else
             render 'edit'
         end
